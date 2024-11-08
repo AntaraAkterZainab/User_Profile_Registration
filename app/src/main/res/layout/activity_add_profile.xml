@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD4A6DD5"
+    tools:context=".View.AddProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="15dp"
+        android:backgroundTint="#CCDDE7"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="30dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Registration"
+                android:textColor="#285FBC"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/profileNameEt"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_et"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/profileEmailEt"
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_et"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Email"
+                app:layout_constraintEnd_toEndOf="@+id/profileNameEt"
+                app:layout_constraintStart_toStartOf="@+id/profileNameEt"
+                app:layout_constraintTop_toBottomOf="@+id/profileNameEt" />
+            <EditText
+                android:id="@+id/profileDOBEt"
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_et"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Date of Birth"
+                app:layout_constraintEnd_toEndOf="@+id/profileEmailEt"
+                app:layout_constraintStart_toStartOf="@+id/profileEmailEt"
+                app:layout_constraintTop_toBottomOf="@+id/profileEmailEt" />
+
+            <EditText
+                android:id="@+id/profileDistrictEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_et"
+                android:hint="Enter Your District"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/profileDOBEt"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toStartOf="@+id/profileDOBEt"
+                app:layout_constraintTop_toBottomOf="@+id/profileDOBEt" />
+
+            <EditText
+                android:id="@+id/profilemobileEt"
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_et"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Mobile"
+                app:layout_constraintEnd_toEndOf="@+id/profileDistrictEt"
+                app:layout_constraintStart_toStartOf="@+id/profileDistrictEt"
+                app:layout_constraintTop_toBottomOf="@+id/profileDistrictEt" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:text="ADD PROFILE"
+                android:backgroundTint="#00000000"
+                app:cornerRadius="10dp"
+                android:textColor="#285FBC"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/profilemobileEt"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/profilemobileEt"
+                app:layout_constraintTop_toBottomOf="@+id/profilemobileEt"
+                app:strokeColor="#285FBC"
+                app:strokeWidth="3dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
